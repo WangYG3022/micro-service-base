@@ -1,0 +1,4 @@
+spring:
+  application:
+    # 注册到Eureka的服务名
+    name: config-dept-client

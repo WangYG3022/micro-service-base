@@ -1,0 +1,16 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: ms-cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/WangYG3022/spring-cloud-config-center.git
+          default-label: master # git分支
+#          search-paths: config/ # 仓库文件夹名称，多个以逗号分隔
+#          username:  # git用户名（公开库可以不用填写）
+#          password:  # git密码（公开库可以不用填写）
+

@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: cloud-config-provider-dept #需要从github上读取的资源名称，注意没有yml后缀名
+      #profile配置是什么就取什么配置dev or test。常规操作为修改GitHub上的配置，禁止客户端修改
+#      profile: dev
+      profile: test
+      label: master
+      uri: http://config3344.com:3344

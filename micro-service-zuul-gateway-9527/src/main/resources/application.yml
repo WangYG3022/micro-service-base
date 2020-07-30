@@ -1,0 +1,23 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: ms-cloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: gateway-zuul-9527
+    prefer-ip-address: true
+
+zuul:
+  routes: # 修改真实服务名到虚拟名称的映射
+    mydept.serviceId: ms-cloud-dept
+    mydept.path: /msdept/**
+  ignored-services: ms-cloud-dept # 忽略通过真实服务名的访问
+#  ignored-services: "*" # 同时忽略多个
+#  prefix: /v # 添加统一前缀
+
