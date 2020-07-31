@@ -5,6 +5,9 @@ eureka:
   instance:
     #eureka服务端的实例名称
     hostname: eureka7001.com
+  # 自我保护模式开关
+#  server:
+#    enable-self-preservation: false
   client:
     #false表示不向注册中心注册自己。
     register-with-eureka: false

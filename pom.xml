@@ -92,7 +92,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <!--
     <build>
         <finalName>micro-service-cloud</finalName>
         <resources>
@@ -107,12 +106,11 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
                     <delimiters>
-                        <delimit>$</delimit>
+                        <delimit>@</delimit>
                     </delimiters>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    -->
 
 </project>

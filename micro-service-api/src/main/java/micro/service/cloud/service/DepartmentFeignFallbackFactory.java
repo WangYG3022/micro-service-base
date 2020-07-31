@@ -4,7 +4,6 @@ import feign.hystrix.FallbackFactory;
 import micro.service.cloud.entity.Department;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
